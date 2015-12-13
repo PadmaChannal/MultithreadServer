@@ -22,7 +22,7 @@ public class Client {
             e.printStackTrace();
         }
         Scanner scanner = new Scanner(System.in);
-        while(!scanner.nextLine().equals("exit")){
+        while(scanner.hasNext()){
             try {
                 printStream.print(scanner.nextLine());
             }catch (NullPointerException e){
